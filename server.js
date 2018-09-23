@@ -43,6 +43,13 @@ app.get('/about',(req, res)=>{
     });
 });
 
+app.get('/projects',(req, res)=>{
+    res.render('projects.hbs',{
+        pageTitle:'My projects',
+        welcomeMessage:'This is a project portfolio'
+    });
+})
+
 app.use((req,res,next)=>{
     res.render('bad.hbs',{
         pageTitle:'404 NOT FOUND', 
