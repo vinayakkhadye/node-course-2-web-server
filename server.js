@@ -33,7 +33,7 @@ app.use((req,res,next)=>{
 app.get('/',(req,res)=>{
     res.render('home.hbs',{
         pageTitle:'Home page',
-        welcomeMessage:'welcome to my brand new web site'
+        welcomeMessage:'welcome to my brand new web site now its running on heroku'
     });
 });
 
